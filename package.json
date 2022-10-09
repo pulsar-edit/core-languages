@@ -1,0 +1,53 @@
+{
+  "name": "core-languages",
+  "version": "0.1.0",
+  "description": "Core languages for Pulsar",
+  "main": "index.node",
+  "scripts": {
+    "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
+    "build-debug": "pnpm build --",
+    "build-release": "pnpm build -- --release",
+    "install": "pnpm build-release",
+    "test": "cargo test"
+  },
+  "author": "@pulsar-edit",
+  "license": "MIT",
+  "devDependencies": {
+    "cargo-cp-artifact": "^0.1",
+    "tree-sitter-bash": "^0.19.0",
+    "tree-sitter-c": "^0.20.2",
+    "tree-sitter-cpp": "^0.20.0",
+    "tree-sitter-css": "^0.19.0",
+    "tree-sitter-go": "^0.19.1",
+    "tree-sitter-html": "^0.19.0",
+    "tree-sitter-java": "^0.19.1",
+    "tree-sitter-javascript": "^0.19.0",
+    "tree-sitter-jsdoc": "^0.19.0",
+    "tree-sitter-json": "^0.20.0",
+    "tree-sitter-regex": "^0.19.0",
+    "tree-sitter-ruby": "^0.19.0",
+    "tree-sitter-rust": "^0.20.1",
+    "tree-sitter-typescript": "^0.20.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pulsar-edit/core-languages.git"
+  },
+  "keywords": [
+    "electron",
+    "node",
+    "js",
+    "pulsar",
+    "pulsar-edit",
+    "languages",
+    "tree-sitter",
+    "rust"
+  ],
+  "bugs": {
+    "url": "https://github.com/pulsar-edit/core-languages/issues"
+  },
+  "homepage": "https://github.com/pulsar-edit/core-languages#readme",
+  "dependencies": {
+    "tree-sitter": "^0.20.0"
+  }
+}
